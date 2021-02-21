@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* font-family: 'Heebo', sans-serif; */
+/* font-family: 'Secular One', sans-serif; */
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, #FEFAFB, #FFECF1);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+
+.navbar-item {
+    font-size: 20px;
+    padding: 5px;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    background: lightblue;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+a:hover::after {
+    height: calc(100% + 8px);
+}
+
+
+
+.big-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.big-photo img{
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.details-ravit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 4px solid aliceblue;
+    width: 90%;
+}
+
+.detail-item {
+    padding: 5px;
+}
+.detail-one {
+    font-size: 30px;
+    font-family: 'Secular One', sans-serif;
+}
+
+.detail-two {
+    font-size: 20px;
+    text-align: center;
+}
+
+.detail-three {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    border: 4px solid lightpink;
+    margin: 10px;
+}
+
+.photo-grid img {
+    height: 350px;
+    width: 420px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.summary-ravit {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 40px auto;
+    border-top: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.recommendation-main {
+    flex: 1;
+}
+
+.avatar {
+  float: right;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  margin-left: 15px;
+  border-radius: 40px;
+  background-color: #D6E9FE;
+}
+
+.username {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.comment {
+  overflow: hidden;  /* This is important */
+}
+
+.about-main {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-main img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.form {
+    flex: 1;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.form h1 {
+    font-size: 18px;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    color: #4a4a4a;
+    text-decoration: underline;
+}
+
+input {
+    width: 60%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+
+}
+
+input:focus {
+    border-bottom: 2px solid #78788c;
+}
+
+p::before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 12px 0 0;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+
+}
+
+button:hover {
+    background: #78788c;
+    color: #fff;
+}
+
+
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-top: 2px solid lightgrey;
+    margin-top: 30px;
+}
+
+
+.social {
+    padding-right: 20px;
+}
